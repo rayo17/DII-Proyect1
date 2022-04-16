@@ -6,9 +6,11 @@ PantallaGame::PantallaGame(QWidget *parent) :
     ui(new Ui::PantallaGame)
 {
     ui->setupUi(this);
+
 }
 
 PantallaGame::~PantallaGame()
 {
     delete ui;
 }
+

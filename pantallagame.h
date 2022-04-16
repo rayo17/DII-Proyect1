@@ -3,7 +3,7 @@
 
 #include <QWidget>
 
-namespace Ui {
+namespace Ui{
 class PantallaGame;
 }
 
@@ -14,9 +14,16 @@ class PantallaGame : public QWidget
 public:
     explicit PantallaGame(QWidget *parent = nullptr);
     ~PantallaGame();
+    Ui::PantallaGame *ui;
+
+
+
 
 private:
-    Ui::PantallaGame *ui;
+
+
+
+
 };
 
 #endif // PANTALLAGAME_H
