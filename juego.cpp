@@ -17,11 +17,13 @@ Juego::Juego(QObject *parent)//contructor
 void Juego::startGame(){//start the Game
     puntaje=0; //point zero
     time.setHMS(0,1,0);//colococa el formatato hora,minutos y segundos
-    pantalla->ui->puntajeL->setText(QString::number(puntaje));
+    pantalla->ui->puntajeLabel->setText(QString::number(puntaje));
 
     //pantalla->ui->cronometro->setText(time.toString("m:ss"));//puntero pantalla
     timer->start(1000);// el temporizador se inicializa en un minuto
     pantalla->show();// se muestra la pantalla
+
+
 
 
 
@@ -49,3 +51,10 @@ void Juego::stateUpdate(){// metodo que se ejecuta con el SLOT
     result();
 
 }
+
+void Juego::resultadoFinal(){
+    mBox.setWindowTitle("el juego a Finalizado");
+    timer->stop();
+
+}
+

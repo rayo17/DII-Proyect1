@@ -4,6 +4,7 @@
 #include <QObject>
 #include<QTimer>
 #include<QTime>
+#include<QMessageBox>
 class PantallaGame;
 class Juego : public QObject
 {
@@ -15,7 +16,8 @@ public:
     void set_tiempo();
     void startGame();
     void startTime();
-
+    void resetGAME();
+    void resultadoFinal();
 
 
 signals:
@@ -34,6 +36,7 @@ private:
     QTimer *timer;
     QTime time;
     PantallaGame *pantalla;
+    QMessageBox mBox;
 
 
 

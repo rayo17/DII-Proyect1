@@ -12,11 +12,13 @@ SOURCES += \
     juego.cpp \
     main.cpp \
     pantallagame.cpp \
+    paquete.cpp \
     widget.cpp
 
 HEADERS += \
     juego.h \
     pantallagame.h \
+    paquete.h \
     widget.h
 
 FORMS += \

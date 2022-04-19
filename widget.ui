@@ -13,11 +13,18 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"># Widget{
+background:black;
+border:5px solid silver
+border-raduis:15px 
+}</string>
+  </property>
   <widget class="QPushButton" name="start">
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>410</y>
+     <y>300</y>
      <width>93</width>
      <height>29</height>
     </rect>
@@ -29,8 +36,8 @@
   <widget class="QPushButton" name="quit">
    <property name="geometry">
     <rect>
-     <x>700</x>
-     <y>10</y>
+     <x>340</x>
+     <y>360</y>
      <width>93</width>
      <height>29</height>
     </rect>
@@ -121,6 +128,19 @@
      </spacer>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>20</y>
+     <width>601</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Bienvenido por favor introuduzca los nombres de los participantes </string>
+   </property>
   </widget>
  </widget>
  <resources/>

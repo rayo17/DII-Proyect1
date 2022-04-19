@@ -15,6 +15,8 @@ public:
     explicit PantallaGame(QWidget *parent = nullptr);
     ~PantallaGame();
     Ui::PantallaGame *ui;
+    void tarjetavolteada();
+
 
 
 
